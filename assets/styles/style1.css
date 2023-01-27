@@ -28,11 +28,12 @@
     background-repeat: no-repeat; 
   }
 
-h1{
-  font-size: 70px;
+.title{
+  font-size: 60px;
   color: #ffffff;
-  margin-left: 10px;
-  padding-top: 10px;
+  text-align: left;
+  padding-left: 20px;
+  padding-top: 20px;
 }
 
  .logo{
@@ -41,51 +42,55 @@ h1{
 
  .logo-img{
     height: 165px;
-    margin-left: 975px;
-    margin-top: 175px;
     background-color: #fff;
     border: 1px solid black;
+    margin-top: 175px;
+    margin-left: 975px
+    
   }
 
 /*==================== MAIN ====================*/
 /*==================== NAV ====================*/
-.events{
-  background-color: black;
-}
 
 .subtitle{
   text-decoration: none;
+  background-color: black;
   color: #fff;
   padding: 10px;
   text-align: center;
   font-size: 25px;   
 }
 
-.container{
-   display: flex;
- }
-
 .links{
     display: block;
     line-height: 80px;
-    margin: 0 5px;
 }
 
 .link{
     color: rgb(0, 0, 0);
     font-size: 18px;
-    padding: 7px 13px;
+    padding: 14px 63px;
+    display: block;
   }
 
 .date{
-  padding-left: 130px;
-  padding-top: 25px;
+  padding-left: 400px;
+  padding-top: 50px;
   font-size: 25px;
   font-weight: 15px;
   font-style: italic ;
+  margin-bottom: 10px;
 }
 
-p{
+.date > p{
   font-style: normal;
   padding-left: 30px;
+}
+
+.hockey{
+  height:500px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  margin-top: 100px;
+  margin-left: 200px;
+
 }
