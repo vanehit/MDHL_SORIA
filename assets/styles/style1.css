@@ -21,14 +21,11 @@
 
 /*==================== LAYOUT ====================*/
 
-.header {
+.container {
     width: 100%;
     height: 250px; 
-   
-    /*background-image: url(../img/design1_image1.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;*/
   }
+
 .encabezado-img{
   background-image: url(../img/design1_image1.jpg);
 	background-size: cover;
@@ -48,7 +45,7 @@
 
 
 
-.navbar-logo{
+.logo{
     cursor: pointer;
   }
 
@@ -69,18 +66,15 @@
   padding: 10px;
   text-align: center;
   font-size: 25px;
-  margin-top: -338px;   
+  margin-top: 199px;   
 }
 
-#navbarNav{
-  padding-top: 25px;
-  padding-left: 25px;
-  
-}
 .navbar-nav{
     display: block;
     line-height: 80px;
-    list-style: none;  
+    list-style: none; 
+    padding-left: 25px;
+    font-weight: bold; 
 }
 
 .nav-link{
@@ -116,6 +110,13 @@
 }
 
 /*==================== PAGE ABOUTMDHL ====================*/
+.abuot__container{
+  margin-top: -48px;
+}
+.about{
+  padding-top: 14px;
+ }
+
 .subtitle--about{
   text-decoration: none;
     color: black;
@@ -130,6 +131,7 @@
   font-style: normal;
   padding-left: 240px;
   padding-right: 204px;
+  font-weight: 800;
 }
 
 /*==================== PAGE CONTACT ====================*/
@@ -147,4 +149,5 @@
 .email > h4{
   padding-top: 25px;
 }
+
 

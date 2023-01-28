@@ -23,45 +23,38 @@
 
 .header {
     width: 100%;
-    height: 250px; 
-   
-    /*background-image: url(../img/design1_image1.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;*/
+    height: fit-content; 
   }
-.encabezado-img{
-  background-image: url(../img/design1_image1.jpg);
-	background-size: cover;
-	height: 450px;
-	align-items: center;
-	justify-content: center;
-	color: #fff;
-}
+
+.container{
+    margin-top: 100px;
+    padding-top: 50px;
+    background-image: url(../img/design1_image1.jpg);
+    background-size: cover;
+    height: 450px;
+  }
 
 .title{
   font-size: 60px;
-  color: #ffffff;
-  text-align: left;
-  padding-left: 20px;
-  padding-top: 20px;
+  color: #141414;
+  margin-top: -150px;
+ 
 }
 
+/*==================== LOGO ====================*/
 
-
-.navbar-logo{
+.logo{
     cursor: pointer;
   }
 
  .logo-img{
   height: 165px;
-  background-color: #fff;
-  border: 1px solid black;
-  margin-top: -96px;
-  margin-left: 975px; 
+  margin-top: 557px;
+  margin-left: 40px; 
   }
 
 /*==================== MAIN ====================*/
-/*==================== NAV ====================*/
+
 .subtitle{
   text-decoration: none;
   background-color: black;
@@ -71,26 +64,26 @@
   font-size: 25px;   
 }
 
-#navbarNav{
-  padding-top: 25px;
-  padding-left: 25px;
-  
-}
+/*==================== NAV ====================*/
 .navbar-nav{
-    display: block;
-    line-height: 80px;
-    list-style: none;  
+  list-style: none;
+  margin-top: -705px;
+  margin-left: 873px;
 }
-
+.item{
+  display:inline;
+  padding-left: 28px;
+}
 .nav-link{
-    color: rgb(0, 0, 0);
-    font-size: 18px;
-    text-decoration: none;
+  background-color: rgb(83, 161, 83);
+  color: #fff;
+  text-decoration: none;
+  padding: 20px;
   }
 
   .nav-link:hover{
-    text-decoration:underline;
-  }
+    background-color: rgb(64, 43, 250);
+    }
 
 .date{
   padding-left: 400px;
