@@ -1,0 +1,53 @@
+/*===== GOOGLE FONTS =====*/
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap');
+
+/*==================== BASE ====================*/
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+    font-family: 'Comic Neue', cursive;
+  }
+  
+/*==================== LAYOUT ====================*/
+.links{
+	background-color: #0c0c0c;
+	text-align: center;
+    height: 80px;
+    position: fixed;
+    z-index: 1;
+    
+}
+.link{
+	display: inline-block;
+	text-decoration: none;
+	color: rgb(230, 216, 24);
+	
+    
+}
+
+.header{
+    height: 500px;
+    background-image: url(../img/design1_image1.jpg);
+	background-size: cover;
+    padding-top: 25px;
+	
+}
+
+.title{
+    font-size: 60px;
+    color: #ffffff;
+    text-align: center;
+  }
+
+  .subtitle{
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    font-size: 25px;   
+  }
