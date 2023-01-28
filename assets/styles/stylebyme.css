@@ -14,40 +14,155 @@ body{
   }
   
 /*==================== LAYOUT ====================*/
-.links{
-	background-color: #0c0c0c;
-	text-align: center;
-    height: 80px;
-    position: fixed;
-    z-index: 1;
-    
-}
-.link{
-	display: inline-block;
-	text-decoration: none;
-	color: rgb(230, 216, 24);
-	
-    
+.container{
+  background-image: url(../img/design1_image2.jpg);
+  align-items: center;
+  height: 475px;
+  display: flex;
+  margin-top: 126px;
+
 }
 
-.header{
-    height: 500px;
-    background-image: url(../img/design1_image1.jpg);
-	background-size: cover;
-    padding-top: 25px;
-	
+.encabezado-img{
+ margin-top: -561px;
+}
+
+.logo{
+  cursor: pointer;
+  margin-top: -320px;
+  padding-left: 707px;
+}
+
+.logo-img{
+  height: 115px;
+  transition: all 0.3s;
+  margin-left: -575px;
+  margin-top: -50px;
+}
+
+.logo-img:hover{
+  transform: scale(1.2);
 }
 
 .title{
-    font-size: 60px;
-    color: #ffffff;
-    text-align: center;
-  }
+  font-size: 30px;
+  color: rgb(8, 8, 8);
+  margin-bottom: 50px;
+  margin-right: 150px;
+  margin-inline-end: auto;
+  padding-left: 20px;
+}
 
-  .subtitle{
-    text-decoration: none;
-    color: #fff;
-    padding: 10px;
-    text-align: center;
-    font-size: 25px;   
-  }
+.navbar-nav{
+  list-style: none;
+  margin-top: -64px;
+  margin-left: 350px;
+}
+
+.item{
+  display: inline;
+  padding: 20px;    
+}
+
+.item:hover{
+  transform: scale(1.1);
+}
+
+.nav-link{
+  font-size: x-large;
+  color: #000000; 
+  text-decoration: none;
+}
+
+.nav-link:hover{
+  color: #ffbc0e;
+}
+
+.subtitle{
+  text-decoration: none;
+  color: rgb(8, 8, 8);
+  padding: 39px;;
+  font-size: 30px;   
+}
+
+.date{
+  padding-left: 554px;
+  font-size: 25px;
+  font-style: italic;
+  margin-bottom: 10px;
+  margin-top: 32px;
+}
+
+.date > p{
+  font-style: normal;
+  padding-left: 30px;
+}
+
+.hockey-1{
+  height: 281px;
+  box-shadow: 2px 2px 2px 1px rgb(0 0 0 / 20%);
+  margin-top: -305px;
+  margin-left: 30px;
+}
+
+/*==================== PAGE ABOUTMDHL ====================*/
+.abuot__container{
+  margin-top: -48px;
+}
+.about{
+  padding-top: 14px;
+  margin-left: 249px;
+ }
+
+.subtitle--about{
+  text-decoration: none;
+    color: black;
+    padding-top: 26px;
+    text-align: left;
+    font-size: 25px;
+    margin-left: 240px;
+    margin-top: 33px;
+}
+
+ .paragraph{
+  font-style: normal;
+  padding-left: 240px;
+  padding-right: 204px;
+  font-weight: 800;
+}
+
+.hockey-2{
+  height: 281px;
+  box-shadow: 2px 2px 2px 1px rgb(0 0 0 / 20%);
+  margin-left: 42px;
+  margin-top: -377px;
+  margin-bottom: 144px;
+}
+
+
+/*==================== PAGE CONTACT ====================*/
+
+.email{
+  text-decoration: none;
+  color: black;
+  padding-top: 60px;
+  padding-bottom: 48px;
+  font-size: 20px;
+  margin-left: 543px;
+  margin-top: 33px;
+}
+
+.email > h4{
+  padding-top: 25px;
+}
+
+.hockey-3{
+  height: 281px;
+  box-shadow: 2px 2px 2px 1px rgb(0 0 0 / 20%);
+  margin-left: 42px;
+  margin-top: -176px;
+  margin-bottom: 144px;
+}
+
+
+

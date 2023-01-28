@@ -29,7 +29,7 @@
 .container{
     margin-top: 100px;
     padding-top: 50px;
-    background-image: url(../img/design1_image1.jpg);
+    background-image: url(../img/design1_image2.jpg);
     background-size: cover;
     height: 450px;
   }
@@ -99,12 +99,11 @@
   padding-left: 30px;
 }
 
-.hockey{
+.hockey-1{
   height:500px;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
   margin-top: 100px;
   margin-left: 200px;
-
 }
 
 /*==================== PAGE ABOUTMDHL ====================*/
@@ -124,6 +123,13 @@
   padding-right: 204px;
 }
 
+.hockey-2{
+  height:500px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  margin-top: 100px;
+  margin-left: 200px;
+}
+
 /*==================== PAGE CONTACT ====================*/
 
 .email{
@@ -138,5 +144,12 @@
 
 .email > h4{
   padding-top: 25px;
+}
+
+.hockey-3{
+  height:500px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  margin-top: 100px;
+  margin-left: 200px;
 }
 
