@@ -5,66 +5,118 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mighty Ducks Hokey League </title>
+    <!--==================== FAVICON ====================-->
+    <link rel="icon" href="./assets/img/Logo_Mighty_ducks-01.ico">
+
       <!--==================== STYLES ====================-->
-      <link rel="stylesheet" href="./assets/styles/style1.css">
+       <!--<link rel="stylesheet" href="./assets/styles/style1.css">-->
       <!--<link rel="stylesheet" href="./assets/styles/style2.css">-->
-    <!--<link rel="stylesheet" href="./assets/styles/stylebyme.css">-->
+    <link rel="stylesheet" href="./assets/styles/stylebyme.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <div class="encabezado-img">
-                <h1 class="title">Mighty Ducks Hockey League</h1>
-            </div>
-            <nav class="navbar">
+    <header class="header">     
+        <nav class="nav__header">
+            <div class="container nav__container">
                 <div class="logo">
-                    <img src="./assets/img/Logo_Mighty_ducks-01.png" alt="logo" class="logo-img">
+                    <h2 class="logo__name">Mighty Ducks Hockey League</h2>
+                    <img src="./assets/img/Logo_Mighty_ducks-01.png" alt="logo" class="logo__img">
                 </div>
-                <div>
+                <div class="links">
                     <ul class="navbar-nav">
-                        <li class="item">
-                            <a class="nav-link" href="#">HOME</a>
+                        <li class="item-nav">
+                            <a class="link" href="#">HOME</a>
                         </li>
-                        <li class="item">
-                            <a class="nav-link" href="./AboutMDHL.html">About MDHL</a>
+                        <li class="item-nav">
+                            <a class="link" href="./aboutMDHL.html">About MDHL</a>
                         </li>
-                        <li class="item">
-                            <a class="nav-link" href="./contact.html">Contact</a>
+                        <li class="item-nav">
+                            <a class="link" href="./rules.html">Rules</a>
+                        </li>
+                        <li class="item-nav">
+                            <a class="link" href="./gameInfo.html">Game_info</a>
+                        </li>
+                        <li class="item-nav">
+                            <a class="link link--active" href="./contact.html">Contact</a>
                         </li>
                     </ul>
-                </div
-            </nav>
-        </div>
+                </div>       
+            </div> 
+        </nav>
+        <div class="slider">
+            <ul>
+                <li>
+                    <img src="./assets/img/design1_image1.jpg" alt="sliderimage-1">
+                </li>
+                <li>
+                    <img src="./assets/img/design1_image2.jpg" alt="sliderimage-2">
+                </li>
+                <li>
+                    <img src="./assets/img/design1_image1.jpg" alt="sliderimage-1" >
+                </li>
+                <li>
+                    <img src="./assets/img/design1_image2.jpg" alt="sliderimage-2">
+                </li>
+            </ul>
+        </div>      
     </header>
     
     <main>
-        <div  class="events">
-            <h2 class="subtitle">Upcoming Events</h2>
-            <div>
-                <article>
-                    <div class="date">
-                        <h4>August 4</h4>
-                        <p>MDSL Fundraiser</p>
-                    </div>            
-                            
-                    <div class="date">
-                        <h4>August 16</h4>
-                        <p>Season Kick-off: Meet the Teams</p>
+        <div id="main-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="2">Upcoming Events</th>
+                    </tr>
+                    <tr>
+                        <th>Month</th><th>Description</th>
+                    </tr>
+                </thead>
+    
+                <tr>
+                    <td>August 4</td><td>MDSL Fundraiser</td>
+                </tr>
+                <tr>
+                    <td>August 16</td><td>Season Kick-off: Meet the Teams</td>
+                </tr>
+                <tr>
+                    <td>September 1</td><td>First Game of the Season (Check Game Schedule for details)</td>
+                </tr>
+            </table>
+        </div>
+        <div>
+            <div class="line"></div>
+            <h1 class="subtitle">Galeria de imágenes</h1>
+            <div class="container">
+                <div class="image">
+                    <a>
+                        <img src="./assets/img/hockey_1.jpg" alt="hockey-1" class="img">
+                    </a>
+                    <div class="effect">
+                        <h2>hockey_1</h2>
                     </div>
-            
-                    <div class="date">
-                        <h4>September 1</h4>
-                        <p>First Game of the Season (Check Game Schedule for details)</p>
+                </div>
+                <div class="image">
+                    <a>
+                        <img src="./assets/img/hockey_2.jpg" alt="hockey-2" class="img">
+                    </a>
+                    <div class="effect">
+                        <h2>hockey_2</h2>
                     </div>
-                </article>
-            </div>
-            <div>
-                <figure>
-                    <img src="./assets/img/hockey_1.jpg" alt="hockey_1" class="hockey-1">
-                </figure>
+                </div>
+                <div class="image">
+                    <a>
+                        <img src="./assets/img/hockey_3.jpg" alt="hockey-3" class="img">
+                    </a>
+                    <div class="effect">
+                        <h2>hockey_3</h2>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
+    <footer id="footer">
+        <p>&copy; 2023</p>
+    </footer>
     
 </body>
 </html>

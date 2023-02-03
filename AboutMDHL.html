@@ -5,63 +5,70 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mighty Ducks Hokey League </title>
-      <!--==================== STYLES ====================-->
-   <link rel="stylesheet" href="./assets/styles/style1.css">
+    <!--==================== FAVICON ====================-->
+    <link rel="icon" href="./assets/img/Logo_Mighty_ducks-01.ico">
+    <!--==================== STYLES ====================-->
+    <!--<link rel="stylesheet" href="./assets/styles/style1.css">-->
     <!--<link rel="stylesheet" href="./assets/styles/style2.css">-->
-    <!--<link rel="stylesheet" href="./assets/styles/stylebyme.css">-->
+    <link rel="stylesheet" href="./assets/styles/stylebyme.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <div class="encabezado-img">
-                <h1 class="title">Mighty Ducks Hockey League</h1>
-            </div>
-            <nav class="navbar">
+    <header class="header">     
+        <nav class="nav__header">
+            <div class="container nav__container">
                 <div class="logo">
-                    <img src="./assets/img/Logo_Mighty_ducks-01.png" alt="logo" class="logo-img">
+                    <h2 class="logo__name">Mighty Ducks Hockey League</h2>
+                    <img src="./assets/img/Logo_Mighty_ducks-01.png" alt="logo" class="logo__img">
                 </div>
-                <div>
+                <div class="links">
                     <ul class="navbar-nav">
-                        <li class="item">
-                            <a class="nav-link" href="./index.html">HOME</a>
+                        <li class="item-nav">
+                            <a class="link" href="./index.html">HOME</a>
                         </li>
-                        <li class="item">
-                            <a class="nav-link" href="#">About MDHL</a>
+                        <li class="item-nav">
+                            <a class="link" href="#">About MDHL</a>
                         </li>
-                        <li class="item">
-                            <a class="nav-link" href="./contact.html">Contact</a>
+                        <li class="item-nav">
+                            <a class="link" href="./rules.html">Rules</a>
+                        </li>
+                        <li class="item-nav">
+                            <a class="link" href="./gameInfo.html">Game_info</a>
+                        </li>
+                        <li class="item-nav">
+                            <a class="link link--active" href="./contact.html">Contact</a>
                         </li>
                     </ul>
-                </div
-            </nav>
-        </div>
+                </div>       
+            </div> 
+        </nav>
     </header>
-    
-    
-
-
     <main>
-        <div class="subtitle">
+        <div class="title">
             <h2>About MDHL</h2>
         </div>
-        <div class="abuot__container">
+        <div id="aboutMDHL__container">
             <div>
-                <article class="about">
-                    <h2 class="subtitle--about">Mision<span class="point">.</span></h2>
+                <figure>
+                    <img src="./assets/img/hockey_2.jpg" alt="hockey_1" class="hockey-2">
+                </figure>
+            </div>
+            <div>
+                <article>
+                    <h2 class="subtitle__par">Mision</h2>
                     <p class="paragraph">To support young athletes living Chicago's northside neighborhood, who have an interest in
                         learning and playing soccer, with opportunities to learn and practice skills related to the game of
                         hockey, specifically those skills around team cooperation and good sportsmanship</p>
                 </article>
 
-                <article class="about">
-                    <h2 class="subtitle--about">Vision<span class="point">.</span></h2>
+                <article>
+                    <h2 class="subtitle__par">Vision</h2>
                     <p class="paragraph">The Mighty Ducks Hockey League aspires to develop strong, well-rounded and mindful athletes
                         through the building of character, self-discipline, and leadership.</p>
                     
                 </article>
 
-                <article class="about">
-                    <h2 class="subtitle--about">General Information<span class="point">.</span></h2>
+                <article>
+                    <h2 class="subtitle__par">General Information</h2>
                     <p class="paragraph">The Mighty Ducks Soccer League was established in 1996 to provide athletes residing
                         Chicago's northside neighborhoods an environment in which to learn and play hockey. To be a
                         member of MDHL, you must be between the ages of 4 - 12 and reside a Chicago northside
@@ -69,13 +76,11 @@
                         parents and previous league members.</p>
                 </article>
             </div>
-            <div>
-                <figure>
-                    <img src="./assets/img/hockey_2.jpg" alt="hockey_2" class="hockey-2">
-                </figure>
-            </div>
         </div>
     </main>
+    <footer id="footer">
+        <p>&copy; 2023</p>
+    </footer>
     
 </body>
 </html>

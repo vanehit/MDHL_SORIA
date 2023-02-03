@@ -5,59 +5,72 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mighty Ducks Hokey League </title>
-      <!--==================== STYLES ====================-->
-    <link rel="stylesheet" href="./assets/styles/style1.css">
+    <!--==================== FAVICON ====================-->
+    <link rel="icon" href="./assets/img/Logo_Mighty_ducks-01.ico">
+    <!--==================== STYLES ====================-->
+    <!--<link rel="stylesheet" href="./assets/styles/style1.css">-->
     <!--<link rel="stylesheet" href="./assets/styles/style2.css">-->
-    <!--<link rel="stylesheet" href="./assets/styles/stylebyme.css">-->
+    <link rel="stylesheet" href="./assets/styles/stylebyme.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <div class="encabezado-img">
-                <h1 class="title">Mighty Ducks Hockey League</h1>
-            </div>
-            <nav class="navbar">
+    <header class="header">     
+        <nav class="nav__header">
+            <div class="container nav__container">
                 <div class="logo">
-                    <img src="./assets/img/Logo_Mighty_ducks-01.png" alt="logo" class="logo-img">
+                    <h2 class="logo__name">Mighty Ducks Hockey League</h2>
+                    <img src="./assets/img/Logo_Mighty_ducks-01.png" alt="logo" class="logo__img">
                 </div>
-                <div>
+                <div class="links">
                     <ul class="navbar-nav">
-                        <li class="item">
-                            <a class="nav-link" href="./index.html">HOME</a>
+                        <li class="item-nav">
+                            <a class="link" href="./index.html">HOME</a>
                         </li>
-                        <li class="item">
-                            <a class="nav-link" href="./AboutMDHL.html">About MDHL</a>
+                        <li class="item-nav">
+                            <a class="link" href="./aboutMDHL.html">About MDHL</a>
                         </li>
-                        <li class="item">
-                            <a class="nav-link" href="#">Contact</a>
+                        <li class="item-nav">
+                            <a class="link" href="./rules.html">Rules</a>
+                        </li>
+                        <li class="item-nav">
+                            <a class="link" href="./gameInfo.html">Game_info</a>
+                        </li>
+                        <li class="item-nav">
+                            <a class="link link--active" href="#">Contact</a>
                         </li>
                     </ul>
-                </div
-            </nav>
-        </div>
+                </div>       
+            </div> 
+        </nav>
     </header>
+  
     <main>
         <section class="events">
             <div>
-                <div class="subtitle">
+                <div class="subtitle-contact">
                     <h2>Contact</h2>
                 </div>
                 <div>
                     <article>
                         <div class="email">
-                            <h3>Please email us at <a href="#"> mdhl@chihockey.org</a></h3>
+                            <h3>Please email us at <a href="mailto:mdhl@chihockey.org">mdhl@chihockey.org</a></h3>
                             <h4>We reply to your email as soon as we can.</h4>
                         </div>
                     </article>
                 </div>
-                <div>
-                    <figure>
-                        <img src="./assets/img/hockey_3.jpg" alt="hockey_3" class="hockey-3">
-                    </figure>
-                </div>
+            </div>
+            <div class="container-form">
+                <form action="#" autocomplete="off">
+                    <input type="text" name="name" placeholder="your name" class="campo">
+                    <input type="email" name="email" placeholder="your Email" class="campo">
+                    <textarea name="message" placeholder="your message..."></textarea>
+                    <input type="submit" name="submit" value="submit" class="btn-submit">
+                </form>
             </div>
         </section>
     </main>
+    <footer id="footer">
+        <p>&copy; 2023</p>
+    </footer>
     
 </body>
 </html>

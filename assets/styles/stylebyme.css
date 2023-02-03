@@ -4,93 +4,161 @@
 /*==================== BASE ====================*/
 
 *{
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+  font-family:  'Comic Neue', cursive;
 }
 
-body{
-    font-family: 'Comic Neue', cursive;
-  }
-  
 /*==================== LAYOUT ====================*/
 .container{
-  background-image: url(../img/design1_image2.jpg);
-  align-items: center;
-  height: 475px;
+  width: 90%;
+  height: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 0;
+  height: auto;
+}
+.header{
+  width: 100%;
+  /*background-image: url(../img/design1_image2.jpg);*/
+}
+/*==================== PAGE INDEX ====================*/
+.nav__header{
+  color: #fff;
+  height: 100px;
+  width: 100%;;
+  border-bottom: 2px solid #5fa199b7;
+  background-color: black;
+  position: fixed;
+}
+.nav__container{
   display: flex;
-  margin-top: 126px;
-
+  align-items: center;
+  justify-content: space-between;
+  height: inherit;
+  padding: 0;
 }
-
-.encabezado-img{
- margin-top: -561px;
-}
-
 .logo{
   cursor: pointer;
-  margin-top: -320px;
-  padding-left: 707px;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
 }
-
-.logo-img{
-  height: 115px;
+.logo__name{
+  font-size: 24px;
+  color: #fff;
+}
+.logo__img{
+  height: 100px;
   transition: all 0.3s;
-  margin-left: -575px;
-  margin-top: -50px;
+  }
+.logo__img:hover{
+    transform: scale(1.2);
+  }
+.item-nav{
+  display: inline-block;
+  list-style: none;
+  font-weight: 300;
+  padding: 10px;
+}
+.item-nav:hover{
+  background-color: #e8b82f;
+  color: black;
+  border-radius: 5px;
 }
 
-.logo-img:hover{
-  transform: scale(1.2);
+.link{
+  color: #fff;
+  text-decoration: none;
+}
+.link--active{
+  color: #e8b82f;
+  font-weight: 700;
 }
 
-.title{
+.link--active:hover{
+  color: rgb(8, 8, 0);
+}
+/*==================== SLIDER ====================*/
+.slider{
+  width: 100%;
+  height: 800px;
+  overflow: hidden;
+}
+.slider ul{
+    display: flex;
+    animation: cambio 20s infinite alternate linear;
+    width: 400%;
+}
+.slider li{
+    width: 100%;
+    list-style: none;
+}
+.slider img{
+    width: 100%;
+    height: 100%;
+}
+@keyframes cambio{
+  0%{margin-left: 0;}
+  20%{margin-left: 0;}
+  
+  25%{margin-left: -100%;}
+  45%{margin-left: -100%;}
+  
+  50%{margin-left: -200%;}
+  70%{margin-left: -200%;}
+  
+  75%{margin-left: -300%;}
+  100%{margin-left: -300%;}
+}
+/*==================== PHOTO AND TABLE UPCOMING EVENTS ====================*/
+.container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.foto{
+  width: 30%;
+  padding: 30px 0;
+  overflow: hidden;
+  background-color:  #5fa199;
+  border-radius: 10px;
+  position: relative;
+  text-align: center;
+  margin-bottom: 60px;
+  box-shadow: 0 0 6px;
+  transition: all 0.25s;
+
+}
+.foto:hover{
+  transform: translateY(-15px);
+}
+.img{
+  width: 95%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 10px 0 0 10px;
+  text-align: left;
+}
+
+.event{
+  text-decoration: none;
+  color: #000;
   font-size: 30px;
-  color: rgb(8, 8, 8);
-  margin-bottom: 50px;
-  margin-right: 150px;
-  margin-inline-end: auto;
+  padding-top: 32px;
   padding-left: 20px;
 }
 
-.navbar-nav{
-  list-style: none;
-  margin-top: -64px;
-  margin-left: 350px;
-}
-
-.item{
-  display: inline;
-  padding: 20px;    
-}
-
-.item:hover{
-  transform: scale(1.1);
-}
-
-.nav-link{
-  font-size: x-large;
-  color: #000000; 
-  text-decoration: none;
-}
-
-.nav-link:hover{
-  color: #ffbc0e;
-}
-
-.subtitle{
-  text-decoration: none;
-  color: rgb(8, 8, 8);
-  padding: 39px;;
-  font-size: 30px;   
-}
-
 .date{
-  padding-left: 554px;
+  padding-left: 400px;
   font-size: 25px;
-  font-style: italic;
+  font-weight: 15px;
+  font-style: italic ;
   margin-bottom: 10px;
-  margin-top: 32px;
+  margin-top: 43px;
 }
 
 .date > p{
@@ -98,45 +166,152 @@ body{
   padding-left: 30px;
 }
 
-.hockey-1{
-  height: 281px;
-  box-shadow: 2px 2px 2px 1px rgb(0 0 0 / 20%);
-  margin-top: -305px;
-  margin-left: 30px;
+#main-container{
+	margin: 70px auto;
+	width: 800px;
+}
+
+table{
+	background-color: #e8b82f;
+	text-align: left;
+	border-collapse: collapse;
+	width: 100%;
+}
+
+th, td{
+	padding: 20px;
+  text-align: center;
+}
+
+thead{
+	background-color: #246355;
+	border-bottom: solid 5px #0F362D;
+	color: white;
+}
+
+tr:nth-child(even){
+	background-color: #ddd;
+}
+
+tr:hover td{
+	background-color: #369681;
+	color: white;
+}
+
+/*==================== GALLERY ====================*/
+
+.line{
+  background: #5fa199;
+  height: 5px;
+  width: 100%;
+  display: block;
+}
+
+.container{
+  display:flex;
+  width: 85%;
+  margin: auto;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  border-radius:3px;
+  margin-bottom: 50px;
+}
+.image{
+  width: 32%;
+  position: relative;
+  height:250px;
+  margin-bottom:5px;
+  box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, .75);
+}
+.img{
+  width: 100%;
+  height:100%;
+  object-fit: cover;
+}
+
+.effect{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background:#5fa1998e;
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  transition: .5s ease;
+}
+
+.effect h2{
+  color: #fff;
+  font-weight: 300;
+  font-size:30px;
+  position: absolute;
+  top: 50%;
+  left:50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+
+.image:hover .effect{
+  height:100%;
+  cursor: pointer;
+}
+.subtitle{
+  text-decoration: none;
+  color: #000;
+  padding: 20px;
+  font-size: 30px;
+  display: flex;
+  justify-content: center; 
+}
+/*==================== FOOTER ====================*/
+#footer {
+  background: black;
+  color: white;
+  padding: 25px;
+  text-align: center;
 }
 
 /*==================== PAGE ABOUTMDHL ====================*/
-.abuot__container{
-  margin-top: -48px;
-}
-.about{
-  padding-top: 14px;
-  margin-left: 249px;
+
+.title{
+  text-decoration: none;
+  color: #000;
+  font-size: 30px;
+  padding-top: 140px ;
+  padding-left: 20px; 
  }
 
-.subtitle--about{
-  text-decoration: none;
-    color: black;
-    padding-top: 26px;
-    text-align: left;
-    font-size: 25px;
-    margin-left: 240px;
-    margin-top: 33px;
+#aboutMDHL__container{
+  display: flex;
+  align-items: center;
+  height: 100%;
+  margin-bottom: 100px;
+
 }
 
- .paragraph{
+ #aboutMDHL__container .subtitle__par{
+  text-decoration: none;
+  color: black;
+  font-size: 25px;
+  
+}
+
+#aboutMDHL__container .paragraph{
   font-style: normal;
-  padding-left: 240px;
-  padding-right: 204px;
   font-weight: 800;
+  text-indent: 3%;
+  margin: 25px 50px 20px 0;
 }
 
 .hockey-2{
   height: 281px;
   box-shadow: 2px 2px 2px 1px rgb(0 0 0 / 20%);
-  margin-left: 42px;
-  margin-top: -377px;
-  margin-bottom: 144px;
+  border-radius: 5px;
+  margin: 50px;
+}
+
+.hockey-2:hover{
+  transform: rotate(10deg);
 }
 
 
@@ -145,23 +320,221 @@ body{
 .email{
   text-decoration: none;
   color: black;
-  padding-top: 60px;
-  padding-bottom: 48px;
   font-size: 20px;
-  margin-left: 543px;
-  margin-top: 33px;
+  padding-top: 45px;
+  padding-left: 117px;
+}
+
+.subtitle-contact{
+  text-decoration: none;
+  color: #000;
+  padding-top: 120px;
+  padding-left: 25px;
+  font-size: 30px;
+  display: flex;
+  justify-content: left; 
 }
 
 .email > h4{
   padding-top: 25px;
 }
 
-.hockey-3{
-  height: 281px;
-  box-shadow: 2px 2px 2px 1px rgb(0 0 0 / 20%);
-  margin-left: 42px;
-  margin-top: -176px;
-  margin-bottom: 144px;
+.container-form{
+  width: 100%;
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-gap: 50px;
+  margin-top: 90px;
+}
+.container-form h2{
+  margin-bottom: 15px;
+  font-size: 35px
+}
+.container-form p{
+  font-size: 17px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+.container-form a{
+  font-size: 17px;
+  display: inline-block;
+  text-decoration: none;
+  width: 100%;
+  margin-bottom: 15px;
+  color: black;
+  font-weight: 700;
+}
+.container-form a i{
+  color: #e8b82f;
+  margin-right: 10px;
+}
+.container-form form .campo, textarea{
+  width: 100%;
+  padding: 15px 10px;
+  font-size: 16px;
+  border: 1px solid #dbdbdb;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  outline: 0px;
+}
+.container-form form textarea{
+  max-width: 530px;
+  min-width: 530px;
+  min-height: 140px;
+  max-height: 150px;
+}
+.container-form .btn-submit{
+  padding: 15px;
+  font-size: 16px;
+  border: none;
+  outline: 0px;
+  background: #e8b82f;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 300ms ease;
+  margin-bottom: 45px;
+}
+.container-form .btn-submit:hover{
+  background: #e39403;
+}
+
+/*==================== PAGE RULES ====================*/
+
+.subtitle-rules{
+  text-decoration: none;
+  color: #000;
+  padding-top: 120px;
+  font-size: 30px;
+  display: flex;
+  justify-content: center; 
+}
+.subtitle-play{
+  text-decoration: none;
+  color: #000;
+  font-size: 30px;
+  text-align: center;
+}
+
+.rules__container{
+	display: flex;
+	justify-content: center;
+	height: 100vh;
+  align-items: center;
+  margin-top: -75px;
+}
+
+.card {
+	background-color: #fff;
+	border-radius: 5px;
+	box-shadow: 0 16px 16px rgba(0, 0, 0, 0.267);
+	display: flex;	
+	margin: 24px;
+	overflow: hidden;
+	width: 480px;
+	height: 300px;
+}
+
+.card  h2 {
+	letter-spacing: .1rem;
+	margin: 16px 0;
+	color: #000;;
+}
+
+.left-column {	
+	color: #000;
+	padding: 32px;
+	max-width: 160px;
+	display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background: #5fa1998e;
+  
+}
+
+.right-column {
+	padding: 30px;
+	width: 100%;
+	display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+}
+
+.right-column > ul {
+  padding: 19px;
+  list-style: circle;
+  list-style-position: inside;
+}
+
+.right-column p{	
+	font-size: 17px;
+	color: #000;
+}
+
+.card__list{
+	background-color: #fff;
+	border-radius: 5px;
+	box-shadow: 0 16px 16px rgba(0, 0, 0, 0.267);	
+  margin: -65px 0 40px 169px;
+  overflow: hidden;
+  width: 1019px;
+  height: 400px;
+}
+.column-title{
+  padding: 10px;
+  background: #5fa1998e;
+  text-align: center;
+}
+.center-column {	
+	padding: 19px 36px 0px 68px;;
+	width: 100%;
+}
+.center-column p{	
+	font-size: 50px;
+	color: #000;
+}
+.list-ol li{
+  margin: 10px;
+}
+.sub-list{
+  list-style-position: inside;
+  list-style-type:lower-latin;
+}
+
+/*==================== PAGE GAMEINFO ====================*/
+
+caption{
+  font-size: 35px;
+  padding-bottom: 22px;
+}
+.additional__info{
+  width: 80%;
+  height: 30%;
+  margin-left: 278px;
+  margin-top: -75px;
+}
+.additional__info > h2{
+  margin-top: 114px;
+  padding-bottom: 25px;
+}
+
+.additional__info > p{
+  font-size: 20px;
+  width: 80%;
+  padding: 5px;
+}
+
+.contact-to{
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 80%;
+  margin: 40px 0 55px 170px;
 }
 
 
